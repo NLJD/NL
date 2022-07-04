@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>系统</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      * {
+        border: 1px solid black;
+      }
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .lanse {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <!-- 1 -->
+    <div style="height: 30px" class="flex lanse"></div>
+    <!-- 2 -->
+    <div class="flex1 flex">
+      <!-- 3 -->
+      <div style="width: 90px" class="baise"></div>
+      <!-- 4 -->
+      <div class="flex1 column">
+        <!-- 5 -->
+        <div style="height: 20px" class="baise"></div>
+        <div style="height: 20px" class="baise"></div>
+        <!-- 6 -->
+        <div style="flex: 1;" class="flex1 column">
+          <!-- 7 -->
+            <div style="height: 90px" class="flex">
+              <!-- 9 -->
+              <div style="width: 188px" class="column baise"></div>
+              <div style="width: 188px" class="column baise"></div>
+              <div style="width: 188px" class="column baise"></div>
+              <div style="width: 188px" class="column baise"></div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div style="flex: 1;" class="flex1 column"> 
+            <!-- 10 -->
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+            <div style="height: 40px;" class="column baise"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
